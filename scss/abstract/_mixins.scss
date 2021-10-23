@@ -1,0 +1,14 @@
+@mixin heightNav {
+    height: 20px;
+}
+
+@mixin font24 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@mixin active {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $wihte;
+}
