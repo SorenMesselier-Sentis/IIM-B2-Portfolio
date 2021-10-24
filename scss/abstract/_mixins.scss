@@ -12,3 +12,8 @@
     border-radius: 5px;
     background-color: $wihte;
 }
+
+@mixin imgPortfolio($url){
+    background-image: url($url);
+    background-size: cover;
+}
