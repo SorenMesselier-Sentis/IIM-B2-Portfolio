@@ -1,0 +1,39 @@
+body {
+    background-color: $darkblue;
+    .grid {
+        margin: 5% 10% 0 0;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: dense;
+        .block {
+            grid-column: 1/2;
+            grid-row: 1/4;
+            background-color: $line2;
+            padding: 25px;
+            border-radius: 5px;
+            .photo{
+                position: relative;
+                border-radius: 5px;
+                height: 100%;
+                @include imgSecond('img/photoPro.jpg');
+                overflow: hidden;
+                box-shadow: 4px 4px 8px $shadow;
+            }
+        }
+        .aboutMe {
+            margin: 5% 0 0 10%;
+            .aboutMe, .titleAboutMe {
+                @include font72;
+                color: $wihte;
+            }
+        }
+        .aboutMeP-1, .aboutMeP-2 {
+            margin: 0 10% 0 10%;
+            @include font24;
+            color: $wihte;
+        }
+    }
+}
+

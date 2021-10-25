@@ -7,6 +7,11 @@
     font-weight: bold;
 }
 
+@mixin font72 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
 @mixin active {
     padding: 5px;
     border-radius: 5px;
@@ -16,4 +21,11 @@
 @mixin imgPortfolio($url){
     background-image: url($url);
     background-size: cover;
+}
+
+@mixin imgSecond($url){
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    object-fit: scale-down;
 }
