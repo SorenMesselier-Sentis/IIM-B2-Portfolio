@@ -41,3 +41,25 @@
     display: block;
     margin: 1vw;
 }
+
+@mixin Lphoto {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: $line2;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+@mixin Photo {
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    @include imgSecond('img/photoPro.jpg');
+    overflow: hidden;
+    box-shadow: 4px 4px 8px $shadow;
+}
+
+@mixin ImgContact {
+    margin: 0 auto;
+    width: 100%;
+}

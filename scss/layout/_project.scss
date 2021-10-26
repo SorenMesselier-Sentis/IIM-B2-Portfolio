@@ -12,7 +12,7 @@
     display: grid;
     margin: 5vh 10vw 0 10vw;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 300px);
     .project {
         background-color: $wihte;
         border-radius: 5px;
@@ -22,7 +22,7 @@
     .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
         grid-column: 1/4;
         &:hover {
-            background-color: $shadow;
+            background-color: $shadowHover;
             .hoverProject {
                 @include hoverP;
             }
