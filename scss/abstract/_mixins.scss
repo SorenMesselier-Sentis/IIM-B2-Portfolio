@@ -34,3 +34,10 @@
     background-position: center;
     object-fit: scale-down;
 }
+
+@mixin hoverP {
+    @include font24;
+    color: $wihte;
+    display: block;
+    margin: 1vw;
+}
