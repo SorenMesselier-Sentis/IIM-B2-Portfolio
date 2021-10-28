@@ -9,12 +9,62 @@
         position: absolute;
         height: 1500px;
         width: 200%;
-        left: 150px;
-        top: -15%;
+        left: 10vw;
+        top: -20%;
         z-index: 1;
         background-color: $darkblue;
         transform: rotate(45deg);
         transform-origin: 0% 0%;
         box-shadow: 0 0 0 50px $line1, 0 0 0 90px $line2;
     }
+    .homeTitle {
+        z-index: 5;
+        position: relative;
+        @include font72;
+        color: $wihte;
+        top: 24vw;
+        left: 10vw;
+        height: fit-content;
+    }
+    .homePortfolio {
+        z-index: 5;
+        position: relative;
+        @include font48;
+        color: $wihte;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: $line1;
+        top: 44vw;
+        right: 10vw;
+    }
+}
+
+.responsiveIndex {
+    display: none;
+}
+
+@include responsive {
+    .home {
+        display: none;
+    }
+    .responsiveIndex {
+        display: block;
+        background-image: url('img/photoPro.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        .surRes {
+            display: flex;
+            position: relative;
+            @include font24;
+            padding: 5px;
+            color: $wihte;
+            top: 155vw;
+            height: 15vh;
+            background-color: $line1;
+            justify-content: center;
+            align-items: center;
+        }
+    }   
 }

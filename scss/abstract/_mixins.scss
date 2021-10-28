@@ -12,6 +12,11 @@
     font-weight: bold;
 }
 
+@mixin font48 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 @mixin font72 {
     font-size: 72px;
     font-weight: bold;
@@ -62,4 +67,10 @@
 @mixin ImgContact {
     margin: 0 auto;
     width: 100%;
+}
+
+@mixin responsive {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
 }
