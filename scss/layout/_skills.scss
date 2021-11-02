@@ -68,7 +68,7 @@
             margin: 10vw 0 10vw 0;
         }
         .exp-1 {
-            @include font16;
+            @include font24;
             grid-column: 1/2;
             grid-row: 2/2;
             margin: 10vw;
@@ -80,7 +80,7 @@
             margin: 10vw 0 10vw 0;
         }
         .know-1 {
-            @include font16;
+            @include font24;
             grid-column: 1/1;
             grid-row: 4/5;
             margin: 10vw 0 10vw 0;
@@ -91,7 +91,7 @@
             margin: 0 0 0 10vw;
         }
         .know-3 {
-            @include font16;
+            @include font24;
             grid-column: 1/1;
             grid-row: 6/7;
             margin: 10vw 0 10vw 0;
