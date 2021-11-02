@@ -2,6 +2,11 @@
     height: 20px;
 }
 
+@mixin font16 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 @mixin font24 {
     font-size: 24px;
     font-weight: bold;

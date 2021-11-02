@@ -2,11 +2,9 @@ body {
     background-color: $darkblue;
     .gridAboutMe {
         margin: 5vh 10vw 0 0;
-        min-height: 100vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-auto-flow: dense;
         .block {
         @include Lphoto;
             .photo{
@@ -21,10 +19,38 @@ body {
             }
         }
         .aboutMeP-1, .aboutMeP-2 {
-            margin: 0 10% 0 10%;
+            margin: 10%;
             @include font24;
             color: $wihte;
         }
     }
+    @include responsive {
+        .gridAboutMe {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            .block {
+                display: none;
+            }
+            .aboutMe {
+                margin: 5vw;
+                .titleAboutMe{
+                    @include font36;
+                }
+                grid-column: 1/1;
+                grid-row: 1/1;
+                .aboutMeP-1 {
+                    grid-column: 1/3;
+                    grid-row: 2/2;
+                    margin: 10vw;
+                }
+                .aboutMeP-2 {
+                    grid-column: 1/3;
+                    grid-row: 3/3;
+                    margin: 10vw;
+                }
+            }
+        }
+    }
 }
+
 
