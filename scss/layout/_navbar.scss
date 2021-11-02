@@ -22,20 +22,20 @@ nav {
         @include font24;
         color: $wihte;
         padding: 5px;
-        transition: all 0.3s;
         &:hover{
             @include active;
             color: $darkblue;
         }
     }
-    .burger {
-        display: none;
-        cursor: pointer;
-        .burger1, .burger2, .burger3 {
-            margin: 5px;
-            width: 25px;
-            background-color: $wihte;
-            height: 3px;
+    @include responsive {
+        .nav-links a {
+            @include font16;
+        }
+        .nav-active a {
+            @include font16;
+        }
+        .links a{
+            @include font16;
         }
     }
 }
@@ -49,3 +49,4 @@ nav {
         box-shadow: 0 4px 8px $shadow;
     }
 }
+
