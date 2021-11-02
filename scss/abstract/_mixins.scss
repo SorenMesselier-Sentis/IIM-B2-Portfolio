@@ -49,7 +49,10 @@
     @include font24;
     color: $wihte;
     display: block;
-    margin: 1vw;
+    height: 100%;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: $shadowHover;
 }
 
 @mixin Lphoto {
