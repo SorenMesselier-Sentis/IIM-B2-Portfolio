@@ -333,113 +333,55 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
   }
 }
 .projectTitle {
-  margin: 10vh 10vw 0 10vw;
   font-size: 36px;
   font-weight: bold;
+  width: fit-content;
+  height: fit-content;
   color: #CFE1FC;
+  margin: 10vh 10vw;
 }
 
-.hoverProject {
-  display: none;
+.boxProject {
+  margin: 0 auto;
+  display: flex;
+  height: 340px;
+  width: 1024px;
+  align-items: center;
 }
-
-.gridProject {
-  display: grid;
-  margin: 5vh 10vw 0 10vw;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 300px);
+.boxProject .imgBoxProject {
+  height: 340px;
+  width: 540px;
 }
-.gridProject .project {
+.boxProject .imgBoxProject .imgProject {
+  box-shadow: 8px 12px 8px #03030386;
+}
+.boxProject .textBoxProject {
+  padding: 1rem 2rem 1rem 1rem;
+  height: 170px;
+  width: 550px;
+  background-color: #0D54BF;
   border-radius: 5px;
-  margin: 1vh;
-  transition: all 0.3s;
+  box-shadow: 8px 12px 8px #03030386;
 }
-.gridProject .project-1, .gridProject .project-2, .gridProject .project-3, .gridProject .project-4, .gridProject .project-5, .gridProject .project-6 {
-  grid-column: 1/4;
+.boxProject .textBoxProject .titleBoxProject {
+  display: flex;
+  justify-content: space-between;
 }
-.gridProject .project-1:hover .hoverProject, .gridProject .project-2:hover .hoverProject, .gridProject .project-3:hover .hoverProject, .gridProject .project-4:hover .hoverProject, .gridProject .project-5:hover .hoverProject, .gridProject .project-6:hover .hoverProject {
-  font-size: 24px;
-  font-weight: bold;
+.boxProject .textBoxProject .titleBoxProject .titleProject {
   color: #CFE1FC;
-  display: block;
-  height: 100%;
-  border-radius: 5px;
-  padding: 3%;
-  background-color: #0c0c0cd5;
+  font-size: 18px;
+  font-weight: 700;
 }
-.gridProject .project-1 {
-  background-image: url("../img/link.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.gridProject .project-2 {
-  grid-column: 4/6;
-  background-image: url("../img/README.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.gridProject .project-3 {
-  grid-column: 1/3;
-  grid-row: 2/2;
-  background-image: url("../img/python.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.gridProject .project-4 {
-  grid-column: 3/3;
-  grid-row: 2/2;
-  background-image: url("../img/Kifi.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.gridProject .project-5 {
-  grid-column: 4/6;
-  grid-row: 2/-1;
-  background-image: url("../img/php.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.gridProject .project-6 {
-  grid-column: 1/4;
-  grid-row: 3/4;
-  background-image: url("../img/wordpress.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.boxProject .textBoxProject .explainProject {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #CFE1FC;
+  text-align: center;
+  line-height: 22px;
 }
 
-@media screen and (max-width: 1200px) {
-  .gridProject {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .gridProject .project {
-    height: 400px;
-  }
-  .gridProject .project-1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
-  }
-  .gridProject .project-2 {
-    grid-column: 1/1;
-    grid-row: 2/2;
-  }
-  .gridProject .project-3 {
-    grid-column: 1/1;
-    grid-row: 3/3;
-  }
-  .gridProject .project-4 {
-    grid-column: 1/1;
-    grid-row: 4/4;
-  }
-  .gridProject .project-5 {
-    grid-column: 1/1;
-    grid-row: 5/5;
-  }
-  .gridProject .project-6 {
-    grid-column: 1/1;
-    grid-row: 6/6;
-  }
-}
 .gridcontactme {
   display: grid;
   min-height: 100vh;
