@@ -7,7 +7,7 @@
 }
 
 .boxProject {
-    margin: 2rem auto;
+    margin: 6rem auto;
     display: flex;
     height: 340px;
     width: 1024px;
@@ -43,6 +43,28 @@
             color: $wihte;
             text-align: center;
             line-height: 22px;
+            a {
+                font-weight: bold;
+                color: $wihte;
+                text-decoration: underline;
+            }
+        }
+    }
+    @include responsive {
+        flex-direction: column;
+        width: 350px;
+        height: 500px;
+        .imgBoxProject {
+            margin: 0 auto;
+            .imgProject {
+                width: 350px;
+                box-shadow: none;
+            }
+        }
+        .textBoxProject {
+            width: 350px;
+            margin-bottom: 200px;
+            box-shadow: none;
         }
     }
 }

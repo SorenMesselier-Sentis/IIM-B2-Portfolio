@@ -48,6 +48,16 @@ nav .nav-links:hover, nav .nav-links a:hover {
   background-color: #CFE1FC;
   color: #072A5F;
 }
+nav .burger {
+  display: none;
+  cursor: pointer;
+}
+nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #f1f1f1;
+  margin: 4px;
+}
 @media screen and (max-width: 1200px) {
   nav .nav-links a {
     font-size: 16px;
@@ -61,36 +71,10 @@ nav .nav-links:hover, nav .nav-links a:hover {
     font-size: 16px;
     font-weight: bold;
   }
-}
-
-.line {
-  height: 20px;
-  background-color: #0A3F8F;
-}
-.line-2 {
-  height: 20px;
-  background-color: #0D54BF;
-  box-shadow: 0 4px 8px #03030386;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #f1f1f1;
-  margin: 4px;
-}
-
-@media screen and (max-width: 1200px) {
-  body {
+  nav body {
     overflow-x: hidden;
   }
-
-  .links {
+  nav .links {
     position: absolute;
     right: 0px;
     height: 60vh;
@@ -104,28 +88,34 @@ nav .nav-links:hover, nav .nav-links a:hover {
     transition: transform 0.5s ease-in;
     z-index: 1;
   }
-
-  .burger {
+  nav .burger {
     display: block;
   }
-
-  .active {
+  nav .active {
     transform: translateX(0%);
   }
-
-  header {
+  nav header {
     background-position: center;
   }
-
-  nav ul li a {
+  nav nav ul li a {
     display: flex;
     justify-content: flex-end;
   }
-
-  nav ul {
+  nav nav ul {
     flex-direction: column-reverse;
   }
 }
+
+.line {
+  height: 20px;
+  background-color: #0A3F8F;
+}
+.line-2 {
+  height: 20px;
+  background-color: #0D54BF;
+  box-shadow: 0 4px 8px #03030386;
+}
+
 .home {
   position: relative;
   overflow: hidden;
@@ -395,7 +385,7 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
 }
 
 .boxProject {
-  margin: 2rem auto;
+  margin: 6rem auto;
   display: flex;
   height: 340px;
   width: 1024px;
@@ -433,6 +423,30 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
   color: #CFE1FC;
   text-align: center;
   line-height: 22px;
+}
+.boxProject .textBoxProject .explainProject a {
+  font-weight: bold;
+  color: #CFE1FC;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .boxProject {
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+  }
+  .boxProject .imgBoxProject {
+    margin: 0 auto;
+  }
+  .boxProject .imgBoxProject .imgProject {
+    width: 350px;
+    box-shadow: none;
+  }
+  .boxProject .textBoxProject {
+    width: 350px;
+    margin-bottom: 200px;
+    box-shadow: none;
+  }
 }
 
 .gridcontactme {
