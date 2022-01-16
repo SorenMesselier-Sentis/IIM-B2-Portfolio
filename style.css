@@ -73,6 +73,59 @@ nav .nav-links:hover, nav .nav-links a:hover {
   box-shadow: 0 4px 8px #03030386;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #f1f1f1;
+  margin: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .links {
+    position: absolute;
+    right: 0px;
+    height: 60vh;
+    top: 8vh;
+    background-color: #072A5F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .active {
+    transform: translateX(0%);
+  }
+
+  header {
+    background-position: center;
+  }
+
+  nav ul li a {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    flex-direction: column-reverse;
+  }
+}
 .home {
   position: relative;
   overflow: hidden;
@@ -342,7 +395,7 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
 }
 
 .boxProject {
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   height: 340px;
   width: 1024px;
@@ -357,7 +410,7 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
 }
 .boxProject .textBoxProject {
   padding: 1rem 2rem 1rem 1rem;
-  height: 170px;
+  height: 220px;
   width: 550px;
   background-color: #0D54BF;
   border-radius: 5px;

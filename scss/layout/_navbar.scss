@@ -50,3 +50,57 @@ nav {
     }
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin: 4px;
+}
+
+
+@include responsive {
+    body {
+        overflow-x: hidden;
+    }
+
+    .links {
+        position: absolute;
+        right: 0px;
+        height: 60vh;
+        top: 8vh;
+        background-color: $darkblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+    header {
+        background-position:center;
+    }
+
+    nav ul li a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column-reverse;
+    }
+}
