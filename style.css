@@ -444,6 +444,7 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
   }
   .boxProject .textBoxProject {
     width: 350px;
+    height: 300px;
     margin-bottom: 200px;
     box-shadow: none;
   }
