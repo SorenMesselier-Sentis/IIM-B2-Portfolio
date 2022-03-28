@@ -360,7 +360,6 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
   .gridSkills .know-2 {
     grid-column: 1/1;
     grid-row: 5/6;
-    margin: 0 0 0 10vw;
   }
   .gridSkills .know-3 {
     font-size: 24px;
@@ -372,7 +371,6 @@ body .gridAboutMe .aboutMeP-1, body .gridAboutMe .aboutMeP-2 {
   .gridSkills .know-4 {
     grid-column: 1/1;
     grid-row: 7/8;
-    margin: 0 0 0 10vw;
   }
 }
 .projectTitle {
