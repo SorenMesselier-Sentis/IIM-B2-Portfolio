@@ -2,7 +2,7 @@
 
 ## Hello !
 
-To view my portfolio you just have to do:
+To see my portfolio you just have to do:
 ```
 git clone git@github.com:SorenMesselier-Sentis/Portfolio.git
 ```
